@@ -35,7 +35,25 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="antialiased">
-    <div x-data="{ darkMode: false }" class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
+    <div 
+      x-data="{ 
+        darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+        init() {
+          if (this.darkMode) {
+            document.body.parentNode.classList.add('dark');
+          }
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            this.darkMode = e.matches;
+            if (this.darkMode) {
+              document.body.parentNode.classList.add('dark');
+            } else {
+              document.body.parentNode.classList.remove('dark');
+            }
+          });
+        }
+      }" 
+      class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100"
+    >
       <main class="mx-auto max-w-6xl px-4 py-8 lg:px-8">
         <!-- Back to Portfolio -->
         <a href="../index.html" class="mb-8 inline-flex items-center text-sm font-medium text-zinc-600 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400">
@@ -58,11 +76,17 @@
 
           <!-- Project Images -->
           <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div class="aspect-h-3 aspect-w-4">
+            <div class="aspect-h-4 aspect-w-3">
               <img src="../assets/project5-image1.jpg" alt="Project Image 1" class="rounded-xl object-cover" />
             </div>
-            <div class="aspect-h-3 aspect-w-4">
+            <div class="aspect-h-4 aspect-w-3">
               <img src="../assets/project5-image2.jpg" alt="Project Image 2" class="rounded-xl object-cover" />
+            </div>
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets/project5-image1.jpg" alt="Project Image 3" class="rounded-xl object-cover" />
+            </div>
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets/project5-image2.jpg" alt="Project Image 4" class="rounded-xl object-cover" />
             </div>
           </div>
 

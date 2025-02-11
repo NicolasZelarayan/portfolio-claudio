@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-    <title>Project 2 - Claudio Zelarayan Portfolio</title>
+    <title>Diseño para Emprendimientos - Claudio Zelarayan Portfolio</title>
 
-    <meta name="description" content="Detailed information about Project 2" />
+    <meta name="description" content="Proyectos de diseño de identidad visual para Samsara (velas aromáticas) y Andrea Sol (porcelana fría)" />
     <meta name="author" content="Claudio Zelarayan" />
 
     <!-- Inter web font from bunny.net -->
@@ -35,7 +35,25 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="antialiased">
-    <div x-data="{ darkMode: false }" class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
+    <div 
+      x-data="{ 
+        darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+        init() {
+          if (this.darkMode) {
+            document.body.parentNode.classList.add('dark');
+          }
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            this.darkMode = e.matches;
+            if (this.darkMode) {
+              document.body.parentNode.classList.add('dark');
+            } else {
+              document.body.parentNode.classList.remove('dark');
+            }
+          });
+        }
+      }" 
+      class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100"
+    >
       <main class="mx-auto max-w-6xl px-4 py-8 lg:px-8">
         <!-- Back to Portfolio -->
         <a href="../index.html" class="mb-8 inline-flex items-center text-sm font-medium text-zinc-600 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400">
@@ -47,33 +65,75 @@
 
         <!-- Project Content -->
         <article class="mt-8">
-          <h1 class="text-4xl font-bold">Project 2</h1>
+          <h1 class="text-4xl font-bold">Emprendimientos</h1>
           
           <!-- Project Description -->
           <div class="mt-6 prose prose-zinc dark:prose-invert max-w-none">
             <p class="text-lg">
-              Description of Project 2. Include details about the project's purpose, implementation, and any notable features or achievements.
+              A lo largo de mi carrera, he tenido la oportunidad de colaborar con emprendedores que buscan construir una identidad visual única para sus marcas. Dos proyectos que me gustaría resaltar son los de Samsara, un emprendimiento de velas aromáticas artesanales, y Andrea Sol, un negocio especializado en trabajos en porcelana fría. Ambos proyectos fueron diseñados con el objetivo de reflejar sus esencias y valores a través de una imagen visual clara, coherente y atractiva.
             </p>
           </div>
 
           <!-- Project Images -->
           <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div class="aspect-h-3 aspect-w-4">
-              <img src="../assets/project2-image1.jpg" alt="Project Image 1" class="rounded-xl object-cover" />
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets\sketch1722008651976.png" alt="Project Image 1" class="rounded-xl object-cover" />
             </div>
-            <div class="aspect-h-3 aspect-w-4">
-              <img src="../assets/project2-image2.jpg" alt="Project Image 2" class="rounded-xl object-cover" />
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets\1000821321.jpg" alt="Project Image 2" class="rounded-xl object-cover" />
+            </div>
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets\sketch1737768636902.png" alt="Project Image 3" class="rounded-xl object-cover" />
+            </div>
+            <div class="aspect-h-4 aspect-w-3">
+              <img src="../assets\sketch1737774409053.jpg" alt="Project Image 4" class="rounded-xl object-cover" />
             </div>
           </div>
 
           <!-- Technical Details -->
           <div class="mt-8 prose prose-zinc dark:prose-invert max-w-none">
-            <h2 class="text-2xl font-bold">Technical Details</h2>
-            <ul>
-              <li>Technology 1</li>
-              <li>Technology 2</li>
-              <li>Technology 3</li>
-            </ul>
+            <h2 class="text-2xl font-bold">Samsara - Velas Aromáticas Artesanales</h2>
+            <p class="text-lg">
+              Samsara es una marca dedicada a la venta de velas aromáticas artesanales, cuyo propósito es ofrecer una experiencia sensorial única a sus clientes. Mi colaboración en este proyecto consistió en desarrollar la identidad visual de la marca, que necesitaba transmitir calma, bienestar y pureza, características que definen a las velas de la marca.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6">Desarrollo del Logo</h3>
+            <p>
+              La creación de un logotipo que capturara la serenidad y la conexión con la naturaleza fue clave. Opté por un diseño minimalista con líneas suaves, que evocaran sensaciones de relajación y tranquilidad. Los tonos elegidos para el logo fueron suaves y naturales, lo que refuerza la idea de un producto artesanal y cercano a la naturaleza.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6">Diseño de Flyers</h3>
+            <p>
+              Acompañando el logotipo, diseñé flyers promocionales para resaltar la estética de la marca. Estos materiales buscaban captar la atención de un público que valora la calidad artesanal y el bienestar personal. Utilicé imágenes evocadoras y un estilo limpio, asegurando que la comunicación visual fuera tan tranquila y serena como los productos que representan.
+            </p>
+
+            <p class="mt-4">
+              Este proyecto fue fundamental para Samsara en su esfuerzo por posicionarse en el mercado de productos artesanales, logrando conectar con un público que aprecia los productos naturales y hechos a mano.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8">Andrea Sol - Porcelana Fría</h2>
+            <p class="text-lg">
+              El proyecto con Andrea Sol, un emprendimiento dedicado a la creación de artículos en porcelana fría, también fue una oportunidad para desarrollar una identidad visual que reflejara el carácter artesanal y exclusivo de los productos. Andrea Sol ofrece piezas únicas hechas a mano, y su imagen debía proyectar esta especialización y sofisticación.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6">Desarrollo del Logo</h3>
+            <p>
+              El logotipo para Andrea Sol fue diseñado con un enfoque elegante, utilizando tipografías modernas y suaves que reflejaban la delicadeza del trabajo en porcelana. El diseño tenía que transmitir tanto la calidad artesanal como la exclusividad de los productos, haciendo uso de elementos gráficos sutiles pero representativos de la naturaleza artística de la porcelana.
+            </p>
+
+            <h3 class="text-xl font-bold mt-6">Diseño de Empaque</h3>
+            <p>
+              Además del logotipo, me encargué del diseño de los empaques, que debían ser tan delicados como los productos que contenían. Los empaques fueron diseñados para no solo proteger las piezas, sino también para ofrecer una experiencia premium al cliente al momento de recibir y abrir el producto. El diseño de los empaques reflejaba la personalidad artesanal y única de la marca, manteniendo una coherencia visual con el logo.
+            </p>
+
+            <p class="mt-4">
+              Gracias a esta identidad visual, Andrea Sol logró fortalecer su presencia en el mercado de productos artesanales, transmitiendo la exclusividad y el cuidado que caracteriza a sus trabajos en porcelana fría.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8">Conclusión</h2>
+            <p>
+              Ambos proyectos fueron una excelente oportunidad para trabajar con emprendedores apasionados y ayudarles a dar forma a sus marcas desde una perspectiva visual que estuviera alineada con sus valores y la experiencia que querían ofrecer a sus clientes. A través de un diseño cuidadoso y personalizado, logramos que sus marcas destacaran y se conectaran más profundamente con su audiencia.
+            </p>
           </div>
         </article>
       </main>
