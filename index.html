@@ -88,7 +88,7 @@
       }"
       class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100"
     >
-      <!-- Main Header -->
+      <!-- Main Header inicio --> 
       <header id="page-header" class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md dark:bg-zinc-900/80">
         <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
           <!-- Logo -->
@@ -187,6 +187,7 @@
           </div>
         </div>
       </header>
+      <!-- Main Header fin --> 
 
       <!-- Spacer for fixed header -->
       <div class="h-16"></div>
@@ -206,50 +207,254 @@
         </header>
         <!-- END Main Header -->
 
+        <!-- Hero Section -->
+<section class="relative min-h-[85vh] pt-24">
+  <!-- Background Effects -->
+  <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-20">
+    <div class="h-56 bg-gradient-to-br from-purple-500 to-cyan-400 blur-[106px]"></div>
+    <div class="h-32 bg-gradient-to-r from-cyan-400 to-indigo-500 blur-[106px]"></div>
+  </div>
+
+  <div class="container mx-auto px-4">
+    <div class="grid items-center gap-12 lg:grid-cols-2">
+      <!-- Text Content -->
+      <div class="relative order-2 lg:order-1">
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <span class="inline-block rounded-full bg-purple-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
+              Diseñador Gráfico
+            </span>
+            <h1 class="relative text-4xl font-bold md:text-5xl lg:text-6xl">
+              <span class="text-zinc-800 dark:text-white">Hola, soy</span>
+              <span class="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-cyan-500">
+                Claudio Zelarayan
+                <span class="absolute -bottom-0.5 left-0 h-1 w-full rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 opacity-30"></span>
+              </span>
+            </h1>
+          </div>
+          <p class="text-lg leading-relaxed text-zinc-600 dark:text-zinc-300">
+            Con más de 5 años de experiencia, me dedico a crear diseños que destacan. Me especializo en 
+            <span class="text-purple-600 dark:text-purple-400">branding</span>, 
+            <span class="text-purple-600 dark:text-purple-400">diseño web</span> y 
+            <span class="text-purple-600 dark:text-purple-400">experiencias visuales</span> 
+            que conectan marcas con su audiencia.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 rounded-xl bg-purple-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 dark:hover:bg-purple-700">
+              <span>Contáctame</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </a>
+            <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-6 py-3 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-50 focus:outline-none focus:ring-2 focus:ring-zinc-200 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700">
+              Ver proyectos
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="relative order-1 lg:order-2">
+        <div class="relative aspect-square overflow-hidden rounded-2xl">
+          <!-- Overlay gradient -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-purple-500/10 to-cyan-500/10 backdrop-blur-[2px]"></div>
+          
+          <!-- Image -->
+          <img
+            src="assets/1000821302.jpg"
+            alt="Claudio Zelarayan"
+            class="h-full w-full object-cover object-center"
+            loading="eager"
+            decoding="async"
+            width="800"
+            height="800"
+          />
+
+          <!-- Decorative elements -->
+          <div class="absolute -bottom-6 -left-6 size-24 rounded-full bg-purple-500/20 blur-2xl"></div>
+          <div class="absolute -right-6 -top-6 size-24 rounded-full bg-cyan-500/20 blur-2xl"></div>
+        </div>
+
+        <!-- Stats/Highlights -->
+        <div class="absolute -bottom-4 left-1/2 flex -translate-x-1/2 gap-4 md:-left-4 md:bottom-8 md:translate-x-0">
+          <div class="rounded-xl bg-white/90 p-4 shadow-lg backdrop-blur-sm dark:bg-zinc-800/90">
+            <p class="text-2xl font-bold text-purple-600 dark:text-purple-400">5+</p>
+            <p class="text-xs font-medium text-zinc-600 dark:text-zinc-400">Años de experiencia</p>
+          </div>
+          <div class="rounded-xl bg-white/90 p-4 shadow-lg backdrop-blur-sm dark:bg-zinc-800/90">
+            <p class="text-2xl font-bold text-purple-600 dark:text-purple-400">100+</p>
+            <p class="text-xs font-medium text-zinc-600 dark:text-zinc-400">Proyectos completados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 gap-8">
+  <!-- Projects Section -->
+  <section id="projects" class="space-y-8">
+    <div class="text-center space-y-4">
+      <br>
+      <h2 class="text-3xl font-bold text-zinc-800 dark:text-white md:text-4xl">Mis Proyectos</h2>
+      <p class="mx-auto max-w-2xl text-zinc-600 dark:text-zinc-400">
+        Una selección de mis trabajos más recientes en diseño gráfico, branding y desarrollo web.
+      </p>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Balca Premixer -->
+      <a href="projects/balca-premixer.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821310.jpg" alt="Balca Premixer" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Balca - Premixer</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Branding & Diseño de Empaque</p>
+      </a>
+
+      <!-- E-Sports -->
+      <a href="projects/project1.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821303.jpg" alt="E-Sports" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">E-Sports</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Diseño de Marca y Marketing Digital</p>
+      </a>
+
+      <!-- Emprendimientos -->
+      <a href="projects/project2.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821320.jpg" alt="Emprendimientos" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Emprendimientos</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Identidad Visual para Startups</p>
+      </a>
+
+      <!-- Remeras -->
+      <a href="projects/project3.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821319.jpg" alt="Remeras" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Remeras</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Diseño de Indumentaria</p>
+      </a>
+
+      <!-- Concursos -->
+      <a href="projects/project4.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821294.jpg" alt="Concursos" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Concursos</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Proyectos Premiados</p>
+      </a>
+
+      <!-- Hobby -->
+      <a href="projects/project5.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 dark:bg-zinc-900 dark:hover:bg-zinc-800/75">
+        <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" />
+          </svg>
+        </div>
+        <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+          <img src="assets/1000821291.jpg" alt="Hobby" class="object-cover transition duration-300 group-hover:scale-105" width="600" height="338" />
+        </div>
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Hobby</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Proyectos Personales</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!-- ...existing contact section code... -->
+
+  <!-- Footer -->
+  <!-- ...existing footer code... -->
+</div>
+
         <!-- Main Content -->
         <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
           <!-- Photo -->
           <div class="col-span-1 md:col-span-5">
             <div class="aspect-h-1 aspect-w-1">
-              <img
-                src="assets\1000821302.jpg"
-                alt="Photo"
-                class="rounded-xl object-cover"
-              />
+              
             </div>
           </div>
           <!-- END Photo -->
 
           <!-- Intro -->
-          <div
-            class="relative col-span-1 flex flex-col overflow-hidden rounded-xl bg-zinc-100 p-12 dark:bg-zinc-900 md:col-span-7"
-          >
-            <div
-              aria-hidden="true"
-              class="absolute -left-20 -top-20 size-48 rounded-full bg-yellow-500 blur-2xl"
-            ></div>
-            <div
-              aria-hidden="true"
-              class="absolute -right-10 -top-10 size-64 rounded-full bg-orange-300 blur-3xl"
-            ></div>
-            <div
-              aria-hidden="true"
-              class="absolute inset-0 bg-yellow-100/50 backdrop-blur-md dark:bg-yellow-900/75"
-            ></div>
-            <div class="relative mt-auto">
-              <h1 class="text-4xl font-medium text-black dark:text-white">
-                Hola soy Claudio Zelarayan
-              </h1>
-              <h2 class="mt-3 leading-relaxed text-zinc-900 dark:text-zinc-200">
-                Soy un diseno grafico con 5+ anos de experiencia creando
-                diseños hermosos y funcionales. Me especializo en branding, web
-                design, y la publicidad que te hace ver tu marca y conectar con
-                tu audiencia.
-              </h2>
-            </div>
-          </div>
+     
           <!-- END Intro -->
 
+<<<<<<< HEAD
+          <!-- Projects Section -->
+<section id="projects" class="col-span-1 md:col-span-12 space-y-8">
+  <div class="text-center space-y-4">
+    <h2 class="text-3xl font-bold text-zinc-800 dark:text-white md:text-4xl">Mis Proyectos</h2>
+    <p class="mx-auto max-w-2xl text-zinc-600 dark:text-zinc-400">
+      Una selección de mis trabajos más recientes en diseño gráfico, branding y desarrollo web.
+    </p>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Project Card 1 -->
+    <a href="projects/balca-premixer.html" class="group relative overflow-hidden rounded-xl bg-zinc-100 p-4 transition-all duration-300 hover:bg-zinc-200/75 active:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800/75 dark:active:bg-zinc-800">
+      <div class="absolute right-4 top-4 scale-0 opacity-0 transition duration-200 ease-out group-hover:scale-100 group-hover:opacity-100" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      
+      <div class="aspect-h-9 aspect-w-16 mb-4 overflow-hidden rounded-lg">
+        <img
+          src="assets/1000821310.jpg"
+          alt="Balca Premixer"
+          class="object-cover transition duration-300 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="338"
+        />
+      </div>
+      
+      <div class="space-y-2">
+        <h3 class="text-lg font-medium text-zinc-900 dark:text-zinc-100">Balca - Premixer</h3>
+        <p class="text-sm text-zinc-600 dark:text-zinc-400">Branding & Diseño de Empaque</p>
+      </div>
+    </a>
+
+    <!-- Repite la estructura para los demás proyectos, ajustando contenido e imágenes -->
+    <!-- Project Card 2 -->
+    <!-- ...más proyectos... -->
+  </div>
+</section>
+<!-- End Projects Section -->
+=======
           <!-- Projects -->
           <a
             href="projects/balca-premixer.html"
@@ -462,6 +667,7 @@
             </div>
           </a>
           <!-- END Projects -->
+>>>>>>> 615c3818e5cae0eb9a4b1deda2eaa6a6963d6292
 
           <!-- Contact -->
           <div id="contact" class="relative col-span-1 flex flex-col overflow-hidden rounded-xl bg-gradient-to-br from-purple-900 via-violet-800 to-indigo-800 px-12 py-20 md:col-span-12">
