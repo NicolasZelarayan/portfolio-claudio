@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <title>Project 2 - Claudio Zelarayan Portfolio</title>
+
+    <meta name="description" content="Detailed information about Project 2" />
+    <meta name="author" content="Claudio Zelarayan" />
+
+    <!-- Inter web font from bunny.net -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.bunny.net/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+    <!-- Tailwind CSS v3 Configuration -->
+    <script>
+      const defaultTheme = tailwind.defaultTheme;
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", ...defaultTheme.fontFamily.sans],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="antialiased">
+    <div x-data="{ darkMode: false }" class="min-h-dvh min-w-80 bg-white text-zinc-800 dark:bg-zinc-950 dark:text-zinc-100">
+      <main class="mx-auto max-w-6xl px-4 py-8 lg:px-8">
+        <!-- Back to Portfolio -->
+        <a href="../index.html" class="mb-8 inline-flex items-center text-sm font-medium text-zinc-600 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Portfolio
+        </a>
+
+        <!-- Project Content -->
+        <article class="mt-8">
+          <h1 class="text-4xl font-bold">Project 2</h1>
+          
+          <!-- Project Description -->
+          <div class="mt-6 prose prose-zinc dark:prose-invert max-w-none">
+            <p class="text-lg">
+              Description of Project 2. Include details about the project's purpose, implementation, and any notable features or achievements.
+            </p>
+          </div>
+
+          <!-- Project Images -->
+          <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <div class="aspect-h-3 aspect-w-4">
+              <img src="../assets/project2-image1.jpg" alt="Project Image 1" class="rounded-xl object-cover" />
+            </div>
+            <div class="aspect-h-3 aspect-w-4">
+              <img src="../assets/project2-image2.jpg" alt="Project Image 2" class="rounded-xl object-cover" />
+            </div>
+          </div>
+
+          <!-- Technical Details -->
+          <div class="mt-8 prose prose-zinc dark:prose-invert max-w-none">
+            <h2 class="text-2xl font-bold">Technical Details</h2>
+            <ul>
+              <li>Technology 1</li>
+              <li>Technology 2</li>
+              <li>Technology 3</li>
+            </ul>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
