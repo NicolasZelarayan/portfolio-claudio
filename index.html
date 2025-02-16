@@ -64,6 +64,31 @@
       [x-cloak] {
         display: none !important;
       }
+      .skill-icon {
+        width: 48px;
+        height: 48px;
+      }
+    </style>
+    <!-- En el head, actualiza los estilos -->
+    <style>
+      [x-cloak] {
+        display: none !important;
+      }
+      .skill-icon {
+        width: 64px;
+        height: 64px;
+        transition: all 0.3s ease;
+      }
+      .skill-card:hover .skill-icon {
+        transform: translateY(-5px);
+      }
+      .skill-card {
+        transition: all 0.3s ease;
+      }
+      .skill-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+      }
     </style>
   </head>
   <body class="antialiased">
@@ -390,6 +415,113 @@
     </div>
   </section>
 
+  <!-- Skills Section -->
+<section class="py-16 bg-gradient-to-b from-transparent to-zinc-50/50 dark:to-zinc-900/50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-zinc-800 dark:text-white md:text-4xl">Mis Habilidades</h2>
+      <p class="mt-4 text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+        Dominio de herramientas profesionales y habilidades especializadas en diseño gráfico y creación visual
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+  <!-- Adobe Photoshop -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
+        <img src="assets/skills/photoshop.png" alt="Photoshop" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Adobe Photoshop</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Edición y manipulación profesional de imágenes</p>
+    </div>
+  </div>
+
+  <!-- Adobe Illustrator -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-orange-500/10 group-hover:bg-orange-500/20 transition-colors">
+        <img src="assets/skills/ilustrator.png" alt="Illustrator" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Adobe Illustrator</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Diseño vectorial y creación de logos</p>
+    </div>
+  </div>
+
+  <!-- CorelDRAW -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-green-500/10 group-hover:bg-green-500/20 transition-colors">
+        <img src="assets/skills/draw.png" alt="CorelDRAW" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">CorelDRAW</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Diseño gráfico vectorial y maquetación</p>
+    </div>
+  </div>
+
+  <!-- Canva -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-purple-500/10 group-hover:bg-purple-500/20 transition-colors">
+        <img src="assets/skills/canva.png" alt="Canva" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Canva</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Diseño rápido y efectivo para redes sociales</p>
+    </div>
+  </div>
+
+  <!-- Sketchbook -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-red-500/10 group-hover:bg-red-500/20 transition-colors">
+        <img src="assets/skills/sketchbook.png" alt="Sketchbook" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Sketchbook</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Ilustración digital y bocetos creativos</p>
+    </div>
+  </div>
+
+  <!-- Microsoft Office -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-blue-600/10 group-hover:bg-blue-600/20 transition-colors">
+        <img src="assets/skills/office.png" alt="Microsoft Office" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Microsoft Office</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Dominio del paquete Office completo</p>
+    </div>
+  </div>
+
+  <!-- Diseño de Indumentaria -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-pink-500/10 group-hover:bg-pink-500/20 transition-colors">
+        <img src="assets/skills/diseño-indumentaria.png" alt="Diseño de Indumentaria" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100 text-center whitespace-normal">
+        Diseño de<br>Indumentaria
+      </h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">
+        Creación y desarrollo<br>de moda
+      </p>
+    </div>
+  </div>
+
+  <!-- Creatividad -->
+  <div class="skill-card group p-6 rounded-xl bg-white dark:bg-zinc-800 shadow-lg">
+    <div class="flex flex-col items-center space-y-4">
+      <div class="p-3 rounded-full bg-yellow-500/10 group-hover:bg-yellow-500/20 transition-colors">
+        <img src="assets/skills/idea.png" alt="Creatividad" class="skill-icon">
+      </div>
+      <h3 class="text-lg font-semibold text-zinc-800 dark:text-zinc-100">Creatividad</h3>
+      <p class="text-sm text-zinc-600 dark:text-zinc-400 text-center">Creación de imágenes originales desde cero</p>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
   <!-- Contact Section -->
   <!-- ...existing contact section code... -->
 
@@ -600,5 +732,10 @@
       <!-- END Page Content -->
     </div>
     <!-- END Page Container -->
+  </body>
+</html>
+  </body>
+</html>
+
   </body>
 </html>
